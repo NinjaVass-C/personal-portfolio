@@ -2,14 +2,10 @@ import '../index.css'
 
 export function Navbar() {
     return (
-        <nav className="bg-neutral-primary z-20 md:w-10/12 border-b border-default bg-blue-950/90 rounded-2xl mx-auto mt-2">
-            <h1 className='justify-center mx-auto flex pt-1 font-semibold text-5xl font-sans'>Connor Vass</h1>
+        <nav className="bg-neutral-primary z-20 md:w-10/12 border-default bg-blue-950/40 rounded-md mx-auto ">
+            <h1 className='justify-center mx-auto flex pt-1 font-semibold text-5xl font-sans text-amber-50'>Connor Vass</h1>
             <div className='flex flex-wrap justify-center items-center mx-auto md:p-4 content-center'>
-
-                <ul className='font-medium flex flex-col items-center p-1 md:flex-row md:p-4 mt-4 md:mt-0 md:gap-10'>
-                    <li className='my-3 md:my-0'>
-                        <a href={'#introduction'} className="p-2 bg-blue-900 rounded-2xl text-amber-50 hover:bg-blue-300">Introduction</a>
-                    </li>
+                <ul className='font-medium flex flex-col items-center p-1 md:flex-row md:p-2 mt-2 md:mt-0 md:gap-10'>
                     <li className='my-3 md:my-0'>
                         <a href={'#about'} className="p-2 bg-blue-900 rounded-2xl text-amber-50 hover:bg-blue-300">About Me</a>
                     </li>
