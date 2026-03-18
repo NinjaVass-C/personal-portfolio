@@ -3,6 +3,8 @@ import {Introduction} from "./components/Introduction.tsx";
 import {AboutCard} from "./components/AboutCard.tsx";
 import {About} from "./components/About.tsx";
 import {ExperienceCard} from "./components/ExperienceCard.tsx";
+import {ContactInfo} from "./components/ContactInfo.tsx";
+import { Icon } from '@iconify/react';
 
 function App() {
   return (
@@ -44,6 +46,22 @@ function App() {
               <ExperienceCard inputTitle={{company: 'Other Experience/Personal Projects', role:'Developer', techStack:'', url:'https://github.com/NinjaVass-C'}} inputText={['- Outside of official projects, I am actively learning different languages and frameworks to further my knowledge. My main focus has been with Java Springboot, React, and Node.js']}>
 
               </ExperienceCard>
+          </div>
+          <div className='flex m-16 items-center justify-between relative'></div>
+      </div>
+      <div id='contact' className={'flex flex-col justify-center mt-16 py-5'} >
+          <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50'>Contact Me</h2>
+            <ContactInfo/>
+          <div className='flex gap-20 py-5 items-center justify-center'>
+              <a href={'mailto:connorvassinfo@gmail.com'} className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2'}>
+                  <Icon icon="ic:outline-email" width="48" height="48" /> Email
+              </a>
+              <a href={'mailto:connorvassinfo@gmail.com'} className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2'}>
+                  <Icon icon="mdi:linkedin" width="48" height="48" /> LinkedIn
+              </a>
+              <a href={'mailto:connorvassinfo@gmail.com'} className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2'}>
+                  <Icon icon="mdi:github" width="48" height="48"  /> Github
+              </a>
           </div>
           <div className='flex m-16 items-center justify-between relative'></div>
       </div>
