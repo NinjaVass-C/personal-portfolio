@@ -10,15 +10,15 @@ function App() {
     return (
         <body className='bg-fixed'
               style={{backgroundImage: 'linear-gradient(7deg,rgba(13, 4, 110, 1) 0%, rgba(71, 178, 174, 1) 77%, rgba(100, 214, 237, 1) 100%'}}>
-        <div className={'flex flex-col h-screen py-5'}>
+        <div className={'flex flex-col min-h-screen py-5'}>
             <Navbar/>
             <Introduction/>
             <div className='flex m-16 items-center justify-between relative'></div>
         </div>
-        <div id='about' className={'flex flex-col h-screen py-5'}>
-            <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50 transition-transform duration-200 ease-out hover:scale-105'>About Me</h2>
+        <div id='about' className={'flex flex-col py-5 justify-between min-h-fit gap-8'}>
+            <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50 transition-transform duration-200 ease-out hover:scale-105 text-center'>About Me</h2>
             <About/>
-            <div className='grid grid-cols-2 gap-6 p-5 grow items-center'>
+            <div className='grid lg:grid-cols-2 grid-cols-1 gap-8 p-20'>
                 <AboutCard
                     inputText={'Outside of programming, you can typically find me listening to all sorts of metal music, playing various video games, and watching Esports like CS2 and Valorant. Fun fact: I play Clone Hero, a modern clone of the Guitar Hero games, and collect the instruments from various games!'}
                     inputTitle={'Hobbies'}/>
@@ -32,9 +32,9 @@ function App() {
                     inputText={'Being fairly new to the industry, my main goal is to improve my fundamental skills as much as possible, while keeping up to date on emerging technology. Ideally, I want to work in full stack web development, but still want to try as many different fields as possible. '}
                     inputTitle={'Industry Goals'}/>
             </div>
-            <div className='flex m-16 items-center justify-between relative'></div>
         </div>
-        <div id='experience' className={'flex flex-col h-screen py-5'}>
+        <div className='flex m-16 items-center justify-between relative min-h-fit'></div>
+        <div id='experience' className={'flex flex-col py-5'}>
             <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50'>My Experience</h2>
             <div className='grid grid-cols-1 gap-6 p-5 grow items-center'>
                 <ExperienceCard inputTitle={{
@@ -71,8 +71,8 @@ function App() {
                                 inputText={['- Outside of official projects, I am actively learning different languages and frameworks to further my knowledge. My main focus has been with Java Springboot, React, and Node.js']}>
 
                 </ExperienceCard>
+                <div className='flex m-16 items-center justify-between relative min-h-fit'></div>
             </div>
-            <div className='flex m-16 items-center justify-between relative'></div>
         </div>
         <div id='contact' className={'flex flex-col justify-center mt-16 py-5'}>
             <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50'>Contact Me</h2>
