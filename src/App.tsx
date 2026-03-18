@@ -9,14 +9,13 @@ import {Icon} from '@iconify/react';
 function App() {
     return (
         <body className='bg-fixed'
-              style={{backgroundImage: 'linear-gradient(7deg,rgba(13, 4, 110, 1) 0%, rgba(71, 178, 174, 1) 77%, rgba(100, 214, 237, 1) 100%'}}>
+              style={{backgroundImage: 'linear-gradient(7deg,rgba(0, 0, 59, 1) 0%, rgba(71, 178, 174, 1) 77%, rgba(100, 214, 237, 1) 100%)'}}>
         <div className={'flex flex-col min-h-screen py-5'}>
             <Navbar/>
             <Introduction/>
-            <div className='flex m-16 items-center justify-between relative'></div>
         </div>
-        <div id='about' className={'flex flex-col py-5 justify-between min-h-fit gap-8'}>
-            <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50 transition-transform duration-200 ease-out hover:scale-105 text-center'>About Me</h2>
+        <div id='about' className={'flex flex-col py-5 min-h-fit gap-8 items-center'}>
+            <h2 className='text-6xl font-bold my-8 text-gray-50 duration-200 ease-out hover:scale-105 text-center '>About Me</h2>
             <About/>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-8 p-20'>
                 <AboutCard
@@ -33,10 +32,9 @@ function App() {
                     inputTitle={'Industry Goals'}/>
             </div>
         </div>
-        <div className='flex m-16 items-center justify-between relative min-h-fit'></div>
-        <div id='experience' className={'flex flex-col py-5'}>
-            <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50'>My Experience</h2>
-            <div className='grid grid-cols-1 gap-6 p-5 grow items-center'>
+        <div id='experience' className={'flex flex-col min-h-fit py-5 items-center gap-8'}>
+            <h2 className='text-6xl font-bold my-8 text-gray-50 duration-200 ease-out hover:scale-105 text-center'>My Experience</h2>
+            <div className='grid grid-cols-1 gap-8 p-5 grow items-center'>
                 <ExperienceCard inputTitle={{
                     company: 'Elentra',
                     role: 'Student Software Developer',
@@ -71,13 +69,12 @@ function App() {
                                 inputText={['- Outside of official projects, I am actively learning different languages and frameworks to further my knowledge. My main focus has been with Java Springboot, React, and Node.js']}>
 
                 </ExperienceCard>
-                <div className='flex m-16 items-center justify-between relative min-h-fit'></div>
             </div>
         </div>
-        <div id='contact' className={'flex flex-col justify-center mt-16 py-5'}>
-            <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50'>Contact Me</h2>
+        <div id='contact' className={'flex flex-col py-5 gap-8 items-center'}>
+            <h2 className='text-6xl font-bold my-8 text-gray-50 duration-200 ease-out hover:scale-105 text-center'>Contact Me</h2>
             <ContactInfo/>
-            <div className='flex gap-20 py-5 items-center justify-center'>
+            <div className='flex flex-col md:flex-row gap-5 md:gap-20 py-5 items-center justify-center'>
                 <a href={'mailto:connorvassinfo@gmail.com'}
                    className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2 shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1'}>
                     <Icon icon="ic:outline-email" width="48" height="48"/> Email
