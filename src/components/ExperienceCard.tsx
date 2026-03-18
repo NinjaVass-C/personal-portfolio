@@ -8,7 +8,7 @@ export type Title = {
 
 export function ExperienceCard({inputText, inputTitle}: { inputText: string[], inputTitle: Title }) {
     return (
-        <div className={'w-1/2 bg-blue-300/30 justify-center mx-auto rounded-2xl p-4 '}>
+        <div className={'w-1/2 bg-blue-300/30 justify-center mx-auto rounded-2xl p-4 shadow-2xl duration-200 ease-out hover:scale-105'}>
             <h2 className='text-2xl font-bold justify-center flex text-gray-200'>
                 <a className={'text-blue-200'}
                    href={inputTitle.url}>{inputTitle.company}</a> &nbsp;- {inputTitle.role} {inputTitle.techStack}

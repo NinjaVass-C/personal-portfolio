@@ -16,7 +16,7 @@ function App() {
             <div className='flex m-16 items-center justify-between relative'></div>
         </div>
         <div id='about' className={'flex flex-col h-screen py-5'}>
-            <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50'>About Me</h2>
+            <h2 className='text-6xl font-bold my-8 justify-center flex text-gray-50 transition-transform duration-200 ease-out hover:scale-105'>About Me</h2>
             <About/>
             <div className='grid grid-cols-2 gap-6 p-5 grow items-center'>
                 <AboutCard
@@ -79,15 +79,15 @@ function App() {
             <ContactInfo/>
             <div className='flex gap-20 py-5 items-center justify-center'>
                 <a href={'mailto:connorvassinfo@gmail.com'}
-                   className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2'}>
+                   className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2 shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1'}>
                     <Icon icon="ic:outline-email" width="48" height="48"/> Email
                 </a>
                 <a href={'mailto:connorvassinfo@gmail.com'}
-                   className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2'}>
+                   className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2 shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1'}>
                     <Icon icon="mdi:linkedin" width="48" height="48"/> LinkedIn
                 </a>
                 <a href={'mailto:connorvassinfo@gmail.com'}
-                   className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2'}>
+                   className={'justify-center items-center flex bg-blue-200/90 rounded-2xl p-2 shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1'}>
                     <Icon icon="mdi:github" width="48" height="48"/> Github
                 </a>
             </div>
